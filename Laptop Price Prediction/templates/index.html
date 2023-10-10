@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Prices</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="contain">
+    <div class="row" style="padding-left: 50px;">
+        <div class="col-md-12">
+            <h2 class="text-center p-3" style="color: rgb(0, 0, 0);">
+                Laptop Price Prediction
+            </h2>
+            <form method="post" class="card" style="background-color: rgba(184, 183, 214, 0.89);">
+                <div class="card-body">
+                    <div class="mb-4">
+                        <h2>Fill The Features: </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for='Company'>Company: </label>
+                            <select id="Company" name="Company">
+                                <option>SELECT</option>
+                                <option value="Acer">Acer</option>
+                                <option value="Apple">Apple</option>
+                                <option value="Asus">Asus</option>
+                                <option value="Chuwi">Chuwi</option>
+                                <option value="Dell">Dell</option>
+                                <option value="Fujitsu">Fujitsu</option>
+                                <option value="Google">Google</option>
+                                <option value="HP">HP</option>
+                                <option value="Huawei">Huawei</option>
+                                <option value="Lenovo">Lenovo</option>
+                                <option value="LG">LG</option>
+                                <option value="Mediacom">Mediacom</option>
+                                <option value="Microsoft">Microsoft</option>
+                                <option value="MSI">MSI</option>
+                                <option value="Razer">Razer</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Toshiba">Toshiba</option>
+                                <option value="Vero">Vero</option>
+                                <option value="Xiaomi">Xiaomi</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='TypeName'>Type: </label>
+                            <select id="TypeName" name="TypeName">
+                                <option>SELECT</option>
+                                <option value="2 in 1 Convertible">2 in 1 Convertible</option>
+                                <option value="Gaming">Gaming</option>
+                                <option value="Netbook">Netbook</option>
+                                <option value="Notebook">Notebook</option>
+                                <option value="Ultrabook">Ultrabook</option>
+                                <option value="Workstation">Workstation</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='Inches'>Screen Size: </label>
+                            <select id="Inches" name="Inches">
+                                <option>SELECT</option>
+                                <option value="10.1">10.1</option>
+                                <option value="11.3">11.3</option>
+                                <option value="11.6">11.6</option>
+                                <option value="12.">12</option>
+                                <option value="12.3">12.3</option>
+                                <option value="12.5">12.5</option>
+                                <option value="13.">13</option>
+                                <option value="13.3">13.3</option>
+                                <option value="13.5">13.5</option>
+                                <option value="13.9">13.9</option>
+                                <option value="14.">14</option>
+                                <option value="14.1">14.1</option>
+                                <option value="15.">15</option>
+                                <option value="15.4">15.4</option>
+                                <option value="15.6">15.6</option>
+                                <option value="17.">17</option>
+                                <option value="17.3">17.3</option>
+                                <option value="18.4">18.4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for='Touchscreen'>Touchscreen: </label>
+                            <select id="Touchscreen" name="Touchscreen">
+                                <option>SELECT</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='IPS'>Ips: </label>
+                            <select id="IPS" name="IPS">
+                                <option>SELECT</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='Cpu_Name'>Cpu Name: </label>
+                            <select id="Cpu_Name" name="Cpu_Name">
+                                <option>SELECT</option>
+                                <option value="AMD">AMD</option>
+                                <option value="Intel">Intel</option>
+                                <option value="Samsung">Samsung</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for='cpu_type'>Cpu Type: </label>
+                            <select id="cpu_type" name="cpu_type">
+                                <option>SELECT</option>
+                                <option value="A4-Series 7210">A4-Series 7210</option>
+                                <option value="A6-Series 7310">A6-Series 7310</option>
+                                <option value="A6-Series 9220">A6-Series 9220</option>
+                                <option value="A8-Series 7410">A8-Series 7410</option>
+                                <option value="A9-Series 9410">A9-Series 9410</option>
+                                <option value="A9-Series 9420">A9-Series 9420</option>
+                                <option value="A10-Series 9600P">A10-Series 9600P</option>
+                                <option value="A10-Series 9620P">A10-Series 9620P</option>
+                                <option value="A12-Series 9700P">A12-Series 9700P</option>
+                                <option value="A12-Series 9720P">A12-Series 9720P</option>
+                                <option value="Celeron Dual Core">Celeron Dual Core</option>
+                                <option value="Celeron Quad Core">Celeron Quad Core</option>
+                                <option value="Core i3">Core i3</option>
+                                <option value="Core i5">Core i5</option>
+                                <option value="Core i7">Core i7</option>
+                                <option value="Core M">Core M</option>
+                                <option value="E-Series 6110">E-Series 6110</option>
+                                <option value="E-Series 7110">E-Series 7110</option>
+                                <option value="E-Series 9000">E-Series 9000</option>
+                                <option value="E-Series 9000e">E-Series 9000e</option>
+                                <option value="FX 8800P">FX 8800P</option>
+                                <option value="FX 9830P">FX 9830P</option>
+                                <option value="Ryzen 1600">Ryzen 1600</option>
+                                <option value="Ryzen 1700">Ryzen 1700</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='Ram'>Ram: </label>
+                            <select id="Ram" name="Ram">
+                                <option>SELECT</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="16">16</option>
+                                <option value="24">24</option>
+                                <option value="32">32</option>
+                                <option value="64">64</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='Memory'>Storage (GB): </label>
+                            <select id="Memory" name="storage">
+                                <option>SELECT</option>
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+                                <option value="32">32</option>
+                                <option value="64">64</option>
+                                <option value="128">128</option>
+                                <option value="180">180</option>
+                                <option value="240">240</option>
+                                <option value="256">256</option>
+                                <option value="500">500</option>
+                                <option value="508">508</option>
+                                <option value="512">512</option>
+                                <option value="1024">1024</option>
+                                <option value="2048">2048</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for='Memory_Storage'>Storage Type: </label>
+                            <select id="Memory_Storage" name="Memory_Storage">
+                                <option>SELECT</option>
+                                <option value="Flash Storage">Flash Storage</option>
+                                <option value="HDD">HDD</option>
+                                <option value="Hybrid">Hybrid</option>
+                                <option value="SSD">SSD</option>
+                                <option value="Flash Storage +  1TB HDD">Flash Storage +  1TB HDD</option>
+                                <option value="SSD +  1.0TB Hybrid">SSD +  1.0TB Hybrid</option>
+                                <option value="SSD +  500GB HDD">SSD +  500GB HDD</option>
+                                <option value="SSD +  1TB HDD">SSD +  1TB HDD</option>
+                                <option value="SSD +  2TB HDD">SSD +  2TB HDD</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='Gpu_brand'>Gpu Vender: </label>
+                            <select id="Gpu_brand" name="Gpu_brand">
+                                <option>SELECT</option>
+                                <option value="AMD">AMD</option>
+                                <option value="ARM">ARM</option>
+                                <option value="Intel">Intel</option>
+                                <option value="Nvidia">Nvidia</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for='Gpu_type'>Gpu Type: </label>
+                            <input type="text" name="Gpu_type" id="Gpu_type">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for='Weight'>Weight: </label>
+                            <input type="text" name="Weight" id="Weight">
+                        </div>
+                        <div class="col">
+                            <label for='os'>Operating System: </label>
+                            <select id="os" name="os">
+                                <option>SELECT</option>
+                                <option value="Mac">Mac</option>
+                                <option value="Windows">Windows</option>
+                                <option value="Others/No OS/Linux">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="alert alert-success" role="alert">
+                <h2>{{pred}}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
