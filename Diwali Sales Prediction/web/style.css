@@ -2538,3 +2538,16 @@ footer .copy-right .right ul a .icon-container svg {
   overflow: hidden !important;
 }
 /*# sourceMappingURL=style.css.map */
+
+.zoom-image {
+  position: relative;
+  overflow: hidden;
+  }
+
+.zoom-image img {
+  transition: transform 0.3s;
+  }
+
+.zoom-image:hover img {
+  zoom: 150%;
+  }
